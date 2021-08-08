@@ -1,3 +1,4 @@
+# Show how to use strip
 favorite_language = "python "
 print(favorite_language)
 print(favorite_language.rstrip()) # remove the whitespace from right side
