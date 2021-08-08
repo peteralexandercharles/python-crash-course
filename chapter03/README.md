@@ -1,5 +1,7 @@
 # Python List Methods - WTMatter
 
+![](https://wtmatter.com/wp-content/uploads/2020/04/Python-List-Methods.png)
+
 > This article lists and describes all of the Python List methods. Find out the purpose and the usage of each of these methods with the help of examples.
 
 This article lists and describes all of the Python List methods. Find out the purpose and the usage of each of these methods with the help of examples.
