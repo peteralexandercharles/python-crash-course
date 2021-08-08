@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/peteralexandercharles/python-crash-course/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Python Crash Course
+### My Python Crash Course Review
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![](https://images-na.ssl-images-amazon.com/images/I/81vmJCNCm6L.jpg)
+[Source](https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## The Zen of Python, by Tim Peters
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+  	Beautiful is better than ugly.
 
-- Bulleted
-- List
+  	Explicit is better than implicit.
 
-1. Numbered
-2. List
+  	Simple is better than complex.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+  	Complex is better than complicated.
+	  
+  	Flat is better than nested.
+  	Sparse is better than dense.
+  	Readability counts.
+  	Special cases aren't special enough to break the rules.
+  	Although practicality beats purity.
+  	Errors should never pass silently.
+  	Unless explicitly silenced.
+  	In the face of ambiguity, refuse the temptation to guess.
+  	There should be one-- and preferably only one --obvious way to do it.
+  	Although that way may not be obvious at first unless you're Dutch.
+  	Now is better than never.
+  	Although never is often better than *right* now.
+  	If the implementation is hard to explain, it's a bad idea.
+  	If the implementation is easy to explain, it may be a good idea.
+  	Namespaces are one honking great idea -- let's do more of those!
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/peteralexandercharles/python-crash-course/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+  
+# Hello World with Python Tutor!
+> This is pretty cool
+<iframe width="800" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23%20Say%20hello%20to%20everyone.%0Aprint%28%22Hello%20World!%22%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
