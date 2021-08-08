@@ -1,89 +1,28 @@
-# Python List Methods - WTMatter
+# Python List Methods
 
 ![](https://wtmatter.com/wp-content/uploads/2020/04/Python-List-Methods.png)
 
-> This article lists and describes all of the Python List methods. Find out the purpose and the usage of each of these methods with the help of examples.
-
-This article lists and describes all of the Python List methods. Find out the purpose and the usage of each of these methods with the help of examples.
-
-Python List Methods
--------------------
-
-A number of methods can be applied to Python Lists for performing a number of operations on the list items and the list itself. These methods are listed below and a single line description is given for each of these methods. The titles of all of these methods are linked with their corresponding detailed tutorials. You can go to these articles to learn the usage and working of each of these methods in detail with the help of illustrative examples.
-
-### [Python List append()](https://wtmatter.com/python-list-append/)
-
-It adds a single item at the end of a given list.
-
-* * *
-
-### [Python List clear()](https://wtmatter.com/python-list-clear/)
-
-It removes all the items from a given list and makes it empty.
-
-* * *
-
-### [Python List copy()](https://wtmatter.com/python-list-copy/)
-
-It returns a copy of the given list.
-
-* * *
-
-### [Python List count()](https://wtmatter.com/python-list-count/)
-
-It returns the number of occurrences of a particular item in the list.
-
-* * *
-
-### [Python List extend()](https://wtmatter.com/python-list-extend/)
-
-It appends all of the items from another list to a given list.
-
-* * *
-
-### [Python List index()](https://wtmatter.com/python-list-index/)
-
-It returns the index of the first occurrence of a particular item in the list.
-
-* * *
-
-### [Python List insert()](https://wtmatter.com/python-list-insert/)
-
-It is used to insert a particular item at a given index in the list.
-
-* * *
-
-### [Python List pop()](https://wtmatter.com/python-list-pop/)
-
-It is used to remove a particular element from the list by its index.
-
-* * *
-
-### [Python List remove()](https://wtmatter.com/python-list-remove/)
-
-It is used to remove a particular element from the list by the item itself.
-
-* * *
-
-### [Python List reverse()](https://wtmatter.com/python-list-reverse/)
-
-It reverses the order of the items in the list.
-
-* * *
-
-### [Python List sort()](https://wtmatter.com/python-list-sort/)
-
-It is used to arrange the order of the items in either Ascending or Descending or in a custom order.
-
-* * *
-
-I hope you found this guide useful. If so, do share it with others who are willing to learn Python and other programming languages. If you have any questions related to this article, feel free to ask us in the comments section.
-
-And do not forget to subscribe to WTMatter!
-
-![](data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2090%2090%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E)
-
-I am an IT Engineer, doing lots of stuff like Web Development, Machine Learning, Digital Marketing, Consultation, Blogging and more. I share useful technical stuff here at WTMatter regularly. Find out more about me in the About page.
-
-
 [Source](https://wtmatter.com/python-list-methods/#Python_List_append)
+
+# Introducing List
+A List Is a Sequence
+Like a string, a list is a sequence of values. In a string, the values are characters; in a
+list, they can be any type. The values in a list are called elements or sometimes items. [Source](https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362/ref=sr_1_1?dchild=1&keywords=9781491939369&linkCode=qs&qid=1628431565&s=books&sr=1-1)
+
+
+### Accessing Elements in a List
+<iframe width="800" height="400" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=bicycles%20%3D%20%5B'trek',%20'cannondale',%20'redline',%20'specialized'%5D%0Aprint%28bicycles%5B0%5D.title%28%29%29%0Aprint%28bicycles%5B3%5D%29%0Aprint%28bicycles%5B-1%5D%29%0Amessage%20%3D%20f%22My%20first%20bicycle%20was%20a%20%7Bbicycles%5B0%5D.title%28%29%7D.%22%0Aprint%28message%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+# Try It Yourself
+### 3-1. Names: Store the names of a few of your friends in a list called names. Print each person’s name by accessing each element in the list, one at a time.
+
+<iframe width="800" height="300" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=names%20%3D%20%5B'Jack',%20'Anna',%20'Eric',%20'Vanusa'%5D%0Aprint%28names%5B0%5D%29%0Aprint%28names%5B1%5D%29%0Aprint%28names%5B2%5D%29%0Aprint%28names%5B3%5D%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+### 3-2. Greetings: Start with the list you used in Exercise 3-1, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+
+<iframe width="800" height="400" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=names%20%3D%20%5B'jack',%20'anna',%20'eric',%20'vanusa'%5D%0Amessage%20%3D%20f%22Hello%20%7Bnames%5B0%5D.title%28%29%7D,%20you%20are%20welcome!%22%0Aprint%28message%29%0Amessage%20%3D%20f%22Hello%20%7Bnames%5B1%5D.title%28%29%7D,%20you%20are%20welcome!%22%0Aprint%28message%29%0Amessage%20%3D%20f%22Hello%20%7Bnames%5B2%5D.title%28%29%7D,%20you%20are%20welcome!%22%0Aprint%28message%29%0Amessage%20%3D%20f%22Hello%20%7Bnames%5B3%5D.title%28%29%7D,%20you%20are%20welcome!%22%0Aprint%28message%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+### 3-3. Your Own List: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=rides%20%3D%20%5B'bicycle',%20'motorcycle',%20'car',%20'boat',%20'plane'%5D%0Aprint%28f'Do%20you%20know%20how%20to%20ride%20a%20%7Brides%5B0%5D%7D%3F'%29%0Aprint%28f%22Do%20you%20know%20how%20to%20ride%20a%20%7Brides%5B1%5D%7D%3F%22%29%0Aprint%28f%22Can%20you%20drive%20a%20%7Brides%5B2%5D%7D%3F%22%29%0Aprint%28f%22Do%20you%20how%20to%20piloting%20a%20%7Brides%5B3%5D%7D%3F%22%29%0Aprint%28f%22Can%20you%20piloting%20a%20%7Brides%5B-1%5D%7D%3F%22%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
