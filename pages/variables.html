@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Python Crash Course</title>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("/header.html"); 
+  $("#footer").load("/footer.html"); 
+});
+</script> 
+</head>
+<body>
+<div id="header"></div>
+
+<div class="container">
+  <h1 class="my-4 h1">Python Crash Course</h1>
+  <hr class="my-4">
+  <div class="row">
+    <div class="col">
+      <br>
+      <p style="text-align: center;">
+      <img src="https://camo.githubusercontent.com/ea595b58a4745be54628e06b2ea634a79530ef06a49be5d2b9a2f3d63266d567/68747470733a2f2f696d616765732d6e612e73736c2d696d616765732d616d617a6f6e2e636f6d2f696d616765732f492f3831766d4a434e436d364c2e6a7067" 
+      style="max-height: 400px;">
+      </p>
+      <br><br>
+      <h2>Variables and Simple Data Types</h2>
+      <p>One of the most powerful features of a programming language is the ability to
+        manipulate variables. A variable is a name that refers to a value.
+      </p>
+      <br>
+      <h4 >2-1. Simple Message: Assign a message to a variable, and then print that
+        message.
+      </h4>
+      <iframe width="1000" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=message%20%3D%20%22Hello%20Python%20Crash%20Course!%22%0Aprint%28message%29%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+      <br>
+      <h4 >2-1. Simple Message: Assign a message to a variable, and then print that
+        message.
+      </h4>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=message%20%3D%20%22Hello%20world!%22%0Aprint%28message%29%0A%0Amessage%20%3D%20%22Hello%20Python%20Crash%20Course%20World!%22%0Aprint%28message%29&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+    
+
+      <br>
+      <h4 >Changing Case in a String with Methods
+      </h4>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=name%20%3D%20%22aDa%20lOvElace%22%0Aprint%28name.title%28%29%29%0Aprint%28name.upper%28%29%29%0Aprint%28name.lower%28%29%29&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+    
+    
+      <br>
+      <h4 >Using Variables in Strings
+      </h4>
+      <iframe width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=first_name%20%3D%20%22ada%22%0Alast_name%20%3D%20%22lovelace%22%0Afull_name%20%3D%20f%22%7Bfirst_name%7D%20%7Blast_name%7D%22%0Aprint%28full_name%29%0Aprint%28f%22Hello,%20%7Bfull_name.title%28%29%7D!%22%29%0Amessage%20%3D%20f%22Hello,%20%7Bfull_name.title%28%29%7D!%22%0Aprint%28message%29&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+      
+      <h4 >Adding Whitespace to Strings with Tabs or Newlines
+      </h4>
+      <iframe width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=print%28%22Python%22%29%0A%0A%23%20Adding%20Whitespace%0Aprint%28%22%5CtPython%22%29%0A%0A%23%20Adding%20a%20newline%20in%20a%20string%0Aprint%28%22Languages%3A%5CnPython%5CnC%5CnJavaScript%22%29%0A%0A%23%20Adding%20a%20newline%20in%20a%20string%20and%20tabs%0Aprint%28%22Languages%3A%5Cn%5CtPython%5Cn%5CtC%5Cn%5CtJavaScript%22%29%20%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+      <h4>
+        Stripping Whitespace
+      </h4>
+      <iframe width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23%20Show%20how%20to%20use%20strip%0Afavorite_language%20%3D%20%22python%20%22%0Aprint%28favorite_language%29%0Aprint%28favorite_language.rstrip%28%29%29%20%23%20remove%20the%20whitespace%20from%20right%20side%0Amessage%20%3D%20favorite_language.rstrip%28%29%0Aprint%28favorite_language%29%0A%0Ajava%20%3D%20%22%20Java%22%0Aprint%28java%29%0Aprint%28java.lstrip%28%29%29%20%23%20remove%20the%20whitespace%20from%20left%20side%0A%0Adjango%20%3D%20%22%20django%20%22%0Aprint%28django%29%0Aprint%28django.strip%28%29%29%20%23%20remove%20the%20whitespace%20from%20both%20sides%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+    
+    </div>
+  </div>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>
