@@ -10,6 +10,9 @@
 $(function(){
   $("#header").load("/python-crash-course/header.html"); 
   $("#footer").load("/python-crash-course/footer.html"); 
+
+  $("#header").load("/header.html"); 
+  $("#footer").load("/footer.html"); 
 });
 </script> 
 </head>
@@ -69,11 +72,100 @@ $(function(){
       <h4>
         Avoiding Syntax Errors with Strings
       </h4>
-      <iframe width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=message%20%3D%20%22One%20of%20Python's%20strengths%20is%20its%20diverse%20community.%22%0Aprint%28message%29%0A%0A%23%20message%20%3D%20'One%20of%20Python's%20strengths%20is%20its%20diverse%20community.'%20%23%20SyntaxError%3A%20invalid%20syntax%20%0A%23%20print%28message%29&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>    
+      <iframe width="1000" height="400" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=message%20%3D%20%22One%20of%20Python's%20strengths%20is%20its%20diverse%20community.%22%0Aprint%28message%29%0A%0A%23%20message%20%3D%20'One%20of%20Python's%20strengths%20is%20its%20diverse%20community.'%20%23%20SyntaxError%3A%20invalid%20syntax%20%0A%23%20print%28message%29&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>    
+
+
+      <h4>
+        Try It Yourself
+      </h4>
+
+      <p>
+        2-3. Personal Message: Use a variable to represent a person’s name, and print
+        a message to that person. Your message should be simple, such as, “Hello Eric,
+        would you like to learn some Python today?”
+      </p>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=message%20%3D%20%22Hello%20Python%20Crash%20Course!%22%0Aprint%28message%29&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+      <p>
+        2-5. Famous Quote: Find a quote from a famous person you admire. Print the
+        quote and the name of its author. Your output should look something like the
+        following, including the quotation marks:
+        Albert Einstein once said, “A person who never made a
+        mistake never tried anything new.”
+      </p>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=famous_person%20%3D%20%22abraham%20lincoln%22.strip%28%29%0Amessage%20%3D%20%22%5C%22Be%20sure%20you%20put%20your%20feet%20in%20the%20right%20place,%20then%20stand%20firm.%5C%22%22%0Aprint%28f%22%7Bmessage%7D%20-%20%7Bfamous_person.title%28%29%7D.%22%29%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+      <p>
+        2-7. Stripping Names: Use a variable to represent a person’s name, and include
+        some whitespace characters at the beginning and end of the name. Make sure
+        you use each character combination, "\t" and "\n", at least once.
+        Print the name once, so the whitespace around the name is displayed.
+        Then print the name using each of the three stripping functions, lstrip(),
+        rstrip(), and strip().
+      </p>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=name%20%3D%20%22%5Ct%5Cn%5CtAlbert%20Einstein%5Ct%5Ct%20%20%20%20%20%20%20%20%20%20%20%20%20%22%0Aprint%28name.rstrip%28%29%29%0Aprint%28name.lstrip%28%29%29%0Aprint%28name.strip%28%29%29%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 
 
+      <h4>
+        Underscores in Numbers
+      </h4>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23%20It's%20new%20for%20me,%20and%20is%20usefull%20to%20code%20clean%20using%20large%20numbers%0Auniverse_age%20%3D%2014_000_000_000%0Aprint%28universe_age%29%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
+      <h4>
+        Multiple Assignment
+      </h4>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x,%20y,%20z%20%3D%200,%201,%200%0Aprint%28f%22X%3A%7Bx%7D,%20Y%3A%7By%7D,%20Z%3A%7Bz%7D%22%29&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+      <h4>
+        Constants
+      </h4>
+      <p>When you want to treat a variable as a constant in your code, make the
+        name of the variable all capital letters.
+      </p>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=MAX_CONNECTIONS%20%3D%207000&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+
+      <h4>
+        Try It Yourself
+      </h4>
+
+      <p>
+        2-8. Number Eight: Write addition, subtraction, multiplication, and division
+        operations that each result in the number 8. Be sure to enclose your operations
+        in print() calls to see the results. You should create four lines that look like this:
+        print(5+3)
+        Your output should simply be four lines with the number 8 appearing once
+        on each line.
+      </p>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=print%284%2B4%29%0Aprint%2818-10%29%0Aprint%284*2%29%0Aprint%2816/2%29%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+      <p>
+        2-9. Favorite Number: Use a variable to represent your favorite number. Then,
+        using that variable, create a message that reveals your favorite number. Print
+        that message.
+      </p>
+      <iframe width="1000" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=num%20%3D%2010%0Amessage%20%3D%20f%22%5Ct%5Cn%5CtMy%20favorite%20number%20is%20%7Bnum%7D%5Ct%20%20%20%22%0Aprint%28message.strip%28%29%29%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+      <h4>
+        Comments
+      </h4>
+      <p>Anything following a
+        hash mark in your code is ignored by the Python interpreter.
+      </p>
+      <iframe width="1000" height="300" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=%23%20Say%20hello%20to%20everyone.%0Aprint%28%22Hello%20Python%20people!%22%29%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+      <h4>
+        Try It Yourself
+      </h4>
+
+      <p>
+        2-11. Zen of Python: Enter import this into a Python terminal session and skim
+        through the additional principles.
+      </p>
+      <iframe width="1000" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=%23%20%22With%20great%20power%20comes%20great%20responsibility%22%0Aimport%20this%0A&codeDivHeight=400&codeDivWidth=500&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=py3anaconda&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
     </div>
   </div>
