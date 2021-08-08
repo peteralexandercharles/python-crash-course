@@ -1,4 +1,4 @@
-# python-crash-course
+# Python Crash Course
 My Python Crash Course Review
 ![](https://images-na.ssl-images-amazon.com/images/I/81vmJCNCm6L.jpg)
 [Source](https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280)
